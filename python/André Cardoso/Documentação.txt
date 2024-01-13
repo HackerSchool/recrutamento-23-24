@@ -1,0 +1,15 @@
+COMO ABRIR O PROGRAMA:
+
+Abrir a diretoria onde o projeto se encontra no terminal e escrever "python Projeto_python_André_Cardoso.py" no windows, ou "python3 'Projeto_python_André_Cardoso.py'" no linux
+
+FUNCIONALIDADES DO PROGRAMA:
+
+O programa atua como um gestor de tarefas e tem como funcionalidades:
+
+Ver a lista de tarefas
+Adicionar tarefas a uma lista de tarefas 
+Remover tarefas da lista
+Mudar o nome ou descrição de uma tarefa
+
+Para além disto, o Programa também armaneza as tarefas num ficheiro, para que mesmo que o programa seja fechado ( tem de ser fechado da maneira que é pressuposto, ou seja usando a funcionalidade "End the Task Manager") a lista de tarefas seja a mesma. 
+

@@ -24,7 +24,7 @@ class task_manager():
 
         #função que acessa um txt e tira de la nomes e descrições de tasks guardadas
 
-        with open(self.program_folder + "\\tasks.txt", "r") as file:
+        with open(self.program_folder + "/tasks.txt", "r") as file:
 
             tasks_txt = file.read()
             name_and_desc = tasks_txt.split("\n")
@@ -80,7 +80,7 @@ class task_manager():
 
         name_list = list(self.tasks.keys())
 
-        with open(self.program_folder + "\\tasks.txt", "w") as file:
+        with open(self.program_folder + "/tasks.txt", "w") as file:
             
             for i in range(0, len(self.tasks)):
 

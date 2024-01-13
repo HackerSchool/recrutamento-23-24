@@ -1,3 +1,4 @@
+""" Definição de algumas frases para não spamar no código """
 class Prompts():
     pedirNome = "Nome da task: "
     novoNome = "Novo nome para a task: "
@@ -7,7 +8,7 @@ class Prompts():
     pedirMenuPrincipal = "1 - Adicionar Task\n\
 2 - Remover Task\n\
 3 - Ver Tasks\n\
-4 - Mudar Task Existente\n\
+4 - Editar Task Existente\n\
 5 - Sair: \n"
 
     #Se quiseres adicionar operações também tens de mexer na classe Menu
@@ -19,6 +20,13 @@ class Prompts():
     existeTask = "Task já existe"
 
 
+""" Definição de uma task
+
+### Atributos ###
+name -> nome da task
+description -> descrição da task
+
+ """
 class Task():
     def __init__(self, name, description):
         self.name = name
@@ -40,6 +48,13 @@ class Task():
         return "Task Name: " + self.name + " | Task Description: " + self.description
     
 
+""" Classe que armazena todas as tasks
+
+### Atributos ###
+taskList -> dicionário que armazena as tasks, onde a key é
+            o nome da task e o value a própria task
+
+ """
 class TaskList(Task):
     def __init__(self):
         self.taskList = {}
@@ -71,6 +86,8 @@ class TaskList(Task):
             print("\nImpossível remover task: Não existe uma task com este nome\n")
     
 
+""" Classe onde são definidos os vários menus
+ """
 class Menu(Prompts):
     def menuPrincipal(self, taskList):
         operacao = -1
@@ -114,7 +131,8 @@ class Menu(Prompts):
             return 0
 
 
-
+""" Classe que realiza a operação de adicionar tasks
+ """
 class AddTask(Prompts):
     def execute(self, taskList):
         taskName = input(self.novoNome)
@@ -125,12 +143,16 @@ class AddTask(Prompts):
         taskList.addTask(Task(taskName, taskDescription))
 
 
+""" Classe que realiza a operação de remover tasks
+ """
 class RemoveTask(Prompts):
     def execute(self, taskList):
         taskName = input(self.pedirNome)
         taskList.removeTask(taskName)
 
 
+""" Classe que realiza a operação de ver as tasks
+ """
 class InspectTasks():
     def execute(self, taskList):
         values = taskList.getTaskList().values()
@@ -140,6 +162,8 @@ class InspectTasks():
             print(tasks)
 
 
+""" Classe que realiza a operação de abrir o menu de edição de tasks
+ """
 class MenuChangeTask(Menu):
     def execute(self, taskList):
         taskName = input(self.pedirNome)
@@ -150,20 +174,24 @@ class MenuChangeTask(Menu):
             print("Nome inválido")
 
 
+""" Classe que realiza a operação de mudar o nome de uma task
+ """
 class ChangeName(Prompts):
     def execute(self, taskName, taskList):
         task = taskList.getTask(taskName)
         task.setName(input(self.novoNome))
 
 
-
+""" Classe que realiza a operação de mudar a descrição de uma task
+ """
 class ChangeDescription(Prompts):
     def execute(self, taskName, taskList):
         task = taskList.getTask(taskName)
         task.setDescription(input(self.novaDescricao))
             
     
-
+""" Classe que realiza a operação de mudar o nome e a descrição de uma task
+ """
 class ChangeNameAndDescription(Prompts):
     def execute(self, taskName, taskList):
         task = taskList.getTask(taskName)
@@ -172,10 +200,19 @@ class ChangeNameAndDescription(Prompts):
 
 
 
-
+# Inicialização da lista de tasks
 taskList = TaskList()
 menu = Menu()
+
+# Inicialização do menu principal
 while(menu.menuPrincipal(taskList) != 0): 
     continue
 
+
+
+
+
+
+
+        
 
