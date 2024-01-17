@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+
+		<title>
+			Debian -- The Universal Operating System
+		</title>
+
+	</head>
+
+
+	<body>
+		<style>
+
+			body{
+				/*para o div chegar as bordas do ecra*/
+				margin: 0;
+				padding: 0;
+					
+				font-family: sans-serif;
+				
+				overflow-x: hidden;
+			}
+			
+			
+/* ====================== PARTE DE CIMA ================================ */
+			
+
+/*			-- CABEÇALHO -- */
+
+			/*after para nao croppar a faixa azul mais abaixo*/
+			.cabecalho::after{
+				/*display: flex; */
+				overflow: hidden;
+			}
+			
+			.cabecalho{
+				background: linear-gradient(to bottom, #d8dbe2, #ffffff);
+				width: 100%;
+				height: 100px;
+			}
+
+			/*.cabecalho a points to all <a> elemenets in cabecalho*/
+			.cabecalho a{
+				text-decoration: none;
+			}
+			
+			.subcabecalho{
+				border-bottom: 1px solid #C70036;
+				position: relative;
+				top: 30px;
+				/*o quao invade o logo a esquerda (qnt menos mais invade)*/
+				left: 50px;
+			}
+
+
+			.logo{
+			/*	max-width: 100%; */
+				float: left;
+				margin-right: 5px;
+				position: relative;
+				top: 10px;
+			}
+
+			.blog{
+				/*margin-left: 5px;*/
+				margin-right: 5px;
+				overflow: hidden;
+				position: relative;
+				top: -3px;
+				left: -50px;	
+			}
+			.micronews{
+				margin-left: 5px;
+				margin-right: 5px;
+				overflow: hidden;
+				position: relative;
+				top: -3px;
+				left: -50px;
+			}
+			.planet{
+				margin-left:5px;
+				overflow: hidden;
+				position: relative;
+				top: -3px;
+				left: -50px;
+			}
+
+
+/*			-- FAIXA -- */
+
+			.faixa-azul{
+				background-color: #05475C;
+				position: relative;
+				top: 60px;
+				min-height: 118px;
+			}
+			.imagem-faixa{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+
+/* ==================== PARTE CENTRAL ========== */
+			
+			.meio{
+				position: relative;
+				top: 60px;
+				width: 100%;
+				height: 1000px;
+			}
+			
+
+/*			-- COMMUNITY -- */
+
+			.community{
+				position: absolute;
+				top: 0px;
+				width: 1000px;
+			}
+
+			.community-title{
+				position: absolute;
+				top: 45px;
+				left: 310px;
+				width: 500px;
+				letter-spacing: 0.08em;
+				font-size: 2.2em;
+			}
+
+			.community-subtitle{
+				position: absolute;
+				top: 100px;
+				left: 300px;
+				font-weight: normal;
+				font-size: 1.4em;
+			}
+
+
+			.group-photo{
+				position: absolute;
+				top: 175px;
+				left: 120px;
+				width: 700px;
+				height: auto;
+			}
+		
+			.people{
+				position: absolute;
+				top: 580px;
+				left: 200px;
+			}
+
+			.people-text{
+				position: absolute;
+				top: 640px;
+				left: 195px;
+			}
+
+			.people-logo{
+				position:absolute;
+				top: 602px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+			}
+
+			.philosophy{
+				position: absolute;
+				top: 690px;
+				left: 200px;
+			}
+
+			.philosophy-text{
+				position: absolute;
+				top: 750px;
+				left: 195px;
+			}
+
+			.philosophy-logo{
+				position: absolute;
+				top: 712px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+			}
+
+
+			.contribute{
+				position: absolute;
+				top: 800px;
+				left: 200px;
+			}
+
+			.contribute-text{
+				position: absolute;
+				top: 860px;
+				left: 195px;
+			}
+
+			.contribute-logo{
+				position: absolute;
+				top: 822px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+			}
+
+			.community-more{
+				position: absolute;
+				top: 910px;
+				left: 200px;
+			}
+
+			.community-more-text{
+				position: absolute;
+				top: 970px;
+				left: 195px;
+			}
+
+			.community-more-logo{
+				position: absolute;
+				top: 932px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+			}
+
+
+/*			-- OPERATING SYSTEM -- */
+
+			.operating-system{
+				position: absolute;
+				left: 1000px;
+				width: 1000px;
+			}
+
+			.operating-system-title{
+				position: absolute;
+				top: 45px;
+				left: 200px;
+				letter-spacing: 0.08em;
+				font-size: 2.2em;
+			}
+
+			.operating-system-subtitle{
+				position: absolute;
+				top: 100px;
+				left: 205px;
+				font-weight: normal;
+				font-size: 1.4em;
+			}
+
+			.operating-system-logo{
+				position: absolute;
+				top: 175px;
+				left: 80px;
+				width: 700px;
+				height: auto;
+			}
+
+			.why-debian{
+				position: absolute;
+				top: 580px;
+				left: 200px;
+			}
+
+			.why-debian-text{
+				position: absolute;
+				top: 640px;
+				left: 195px;
+
+			}
+
+			.why-debian-logo{
+				position: absolute;
+				top: 602px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+
+			}
+
+			.user-support{
+				position: absolute;
+				top: 690px;
+				left: 200px;
+
+			}
+
+			.user-support-text{
+				position: absolute;
+				top: 750px;
+				left: 195px;
+
+			}
+
+			.user-support-logo{
+				position: absolute;
+				top: 712px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+
+			}
+
+			.security-updates{
+				position: absolute;
+				top: 800px;
+				left: 200px;
+
+			}
+
+			.security-updates-text{
+				position: absolute;
+				top: 860px;
+				left: 195px;
+
+			}
+
+			.security-updates-logo{
+				position: absolute;
+				top: 822px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+
+			}
+			
+			.operating-system-more{
+				position: absolute;
+				top: 910px;
+				left: 200px;
+
+			}
+
+			.operating-system-more-text{
+				position: absolute;
+				top: 970px;
+				left: 195px;
+	
+			}
+
+			.operating-system-more-logo{
+				position: absolute;
+				top: 932px;
+				left: 68px;
+				width: auto;
+				height: 60px;
+
+			}
+			
+/*			-- PROJECT NEWS -- */
+
+			.project-news{
+				position: absolute;
+				top: 1090px;
+				width: 2000px;
+			}
+
+			.project-news-title{
+				position: absolute;
+				left: 820px;
+				letter-spacing: 0.08em;
+				font-size: 2.2em;
+			}
+		
+			.project-news-subtitle{
+				position: absolute;
+				left: 755px;
+				top: 60px;
+				font-weight: normal;
+				font-size: 1.4em;	
+			}
+
+			.calendario{
+				position: absolute;
+				left: 350px;
+				width: 90px;
+				height: 54px;
+				border: 1px solid #000000;
+				box-shadow: 1px 1px 2.5px 0px rgba(0, 0, 0, 0.5);
+			}
+
+			.mes{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #ae0003;
+			}
+			
+			.mes-nome{
+				text-align: center;
+				color: #ffffff;
+				font-size: 13px;
+			}
+		
+			.resto-data{
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.dia{
+				text-align: center;
+				font-size: 21px;
+			}
+
+			.ano{
+				position: absolute;
+				top: 40px;
+				text-align: center;
+				font-size: 12px;
+			}
+
+			.noticia1{
+				position: absolute;
+				top: 200px;
+			}
+			
+			.noticia1-text{
+				position: absolute;
+				top: 220px;
+				left: 465px;
+			}
+
+			.noticia2{
+				position: absolute;
+				top: 280px;
+			}
+			
+			.noticia2-text{
+				position: absolute;
+				top: 300px;
+				left: 465px;
+			}
+
+			.noticia3{
+				position: absolute;
+				top: 360px;
+			}
+			
+			.noticia3-text{
+				position: absolute;
+				top: 380px;
+				left: 465px;
+			}
+
+
+			.noticia4{
+				position: absolute;
+				top: 440px;
+			}
+
+			.noticia4-text{
+				position: absolute;
+				top: 460px;
+				left: 465px;
+			}
+
+			.noticia5{
+				position: absolute;
+				top: 520px;
+			}
+
+			.noticia5-text{
+				position: absolute;
+				top: 540px;
+				left: 465px;
+			}
+
+
+/* =================== RODAPÉ ================== */
+   			.rodape{
+				position: relative;
+				top: 900px;
+				width: 2000px;
+			}
+			
+			.caixa-rodape{
+				position: absolute;
+				height: 120px;
+				width: 1940px;
+				right: 0px;
+				border-top: 1px solid #e2e2e2;
+				background-color: #f5f6f7;
+			}
+			
+			.language{
+				position: absolute;
+			}
+
+			.description{
+				position: absolute;
+				top: 90px;
+			}
+
+		</style>
+
+
+		<div class="cabecalho">
+			<img class="logo" src="imgs/debianlogo.png">
+			<div class="subcabecalho">
+				
+				<a class="blog" href="https://bits.debian.org/">Blog</a>
+				<a class="micronews" href="https://micronews.debian.org/">Micronews</a>
+				<a class="planet" href="https://planet.debian.org/">Planet</a>
+			</div>
+		
+		<div class="faixa-azul">
+			<img class="imagem-faixa" src="imgs/emerald-fg.svg">
+		
+		</div>
+
+		<div class="meio">
+			<div class="community">
+				<h1 class="community-title">THE COMMUNITY</h1>
+				<h3 class="community-subtitle">Debian is a Community of People!</h3>
+				<img class="group-photo" src="imgs/debconf23_group_photo.jpg">
+				
+				<h3 class="people"><a href="https://www.debian.org/intro/people">People</a></h3>
+				<a class="people-text">Who we are and what we do</a>
+				<img class="people-logo" src="imgs/people.svg">
+				
+				<h3 class="philosophy"><a href="https://www.debian.org/intro/philosophy">Our Philosophy</a></h3>
+				<a class="philosophy-text">Why we do it, and how we do it</a>
+				<img class="philosophy-logo" src="imgs/heart.svg">
+
+				<h3 class="contribute"><a href="https://www.debian.org/devel/join/">Get Involved, Contribute</a></h3>
+				<a class="contribute-text">How you can join us!</a>
+				<img class="contribute-logo" src="imgs/morepeople.svg">
+
+				<h3 class="community-more"><a href="https://www.debian.org/intro/index#community">More...</a></h3>
+				<a class="community-more-text">Additional information about the Debian community</a>
+				<img class="community-more-logo" src="imgs/more.svg">
+
+
+			</div>
+		
+			<div class="operating-system">
+				<h1 class="operating-system-title">THE OPERATING SYSTEM</h1>
+				<h3 class="operating-system-subtitle">Debian is a complete Free Operating System!</h3>
+				<img class="operating-system-logo" src="imgs/debianlogo-notext.png">
+
+				<h3 class="why-debian"><a href="https://www.debian.org/intro/why_debian">Why Debian</a></h3>
+				<a class="why-debian-text">What makes Debian special</a>
+				<img class="why-debian-logo" src="imgs/trophy.svg">
+
+				<h3 class="user-support"><a href="https://www.debian.org/support">User Support</a></h3>
+				<a class="user-support-text">Getting help and documentation</a>
+				<img class="user-support-logo" src="imgs/life-ring.svg">
+				
+				<h3 class="security-updates"><a href="https://www.debian.org/security/">Security Updates</a></h3>
+				<a class="security-updates-text">Debian Security Advisories (DSA)</a>
+				<img class="security-updates-logo" src="imgs/security.svg">
+			
+				<h3 class="operating-system-more"><a href="https://www.debian.org/intro/index#software">More...</a></h3>
+				<a class="operating-system-more-text">Further links to downloads and software</a>
+				<img class="operating-system-more-logo" src="imgs/more.svg">
+
+			</div>
+
+			<div class="project-news">
+				<h1 class="project-news-title">PROJECT NEWS</h1>
+				<h3 class="project-news-subtitle">News and Announcements about Debian</h3>
+
+				<div class="calendario noticia1">
+					<div class="mes">
+						<a class="mes-nome">DECEMBER</a>
+					</div>
+
+					<div class="resto-data">
+						<a class="dia">10</a>
+						<a class="ano">2023</a>
+				
+					</div>
+				</div>
+
+				<a class="noticia1-text" href="https://www.debian.org/News/2023/20231210">Updated Debian 12: 12.4 released</a>
+
+
+				<div class="calendario noticia2">
+					<div class="mes">
+						<a class="mes-nome">DECEMBER</a>
+					</div>
+					
+					<div class="resto-data">
+						<a class="dia">10</a>
+						<a class="ano">2023</a>
+					</div>
+				</div>
+
+				<a class="noticia2-text" href="https://www.debian.org/News/2023/2023121002">Debian 12.4 to supersede Debian 12.3</a>
+
+				<div class="calendario noticia3">
+					<div class="mes">
+						<a class="mes-nome">DECEMBER</a>
+					</div>
+					
+					<div class="resto-data">
+						<a class="dia">09</a>	
+						<a class="ano">2023</a>
+				
+					</div>
+				</div>
+
+				<a class="noticia3-text" href="https://www.debian.org/News/2023/2023120902">Debian 12.3 image release delayed</a>
+
+
+				<div class="calendario noticia4">
+					<div class="mes">
+						<a class="mes-nome">OCTOBER</a>
+					</div>
+					
+					<div class="resto-data">
+						<a class="dia">07</a>	
+						<a class="ano">2023</a>
+				
+					</div>
+				</div>
+
+				<a class="noticia4-text" href="https://www.debian.org/News/2023/20231007">Updated Debian 12: 12.2 released</a>
+
+
+				<div class="calendario noticia5">
+					<div class="mes">
+						<a class="mes-nome">OCTOBER</a>
+					</div>
+					
+					<div class="resto-data">
+						<a class="dia">07</a>	
+						<a class="ano">2023</a>
+					</div>
+				</div>
+
+				<a class="noticia5-text" href="https://www.debian.org/News/2023/2023100702">Updated Debian 11: 11.8 released</a>
+
+
+			</div>
+		</div>
+
+		
+		<div class="rodape">
+			<div class="caixa-rodape">
+				<a class= "language" >This page is also available in the following languages:</a>
+				<br>
+				<a class="language" href="debianorg_pt.html">Português</a>
+				<a class="description"><span style="font-weight: bold;">Hackerschool 2023-2024 WebDev Project</span> by Alexandre Delgado</a>
+			</div>
+		</div>
+	</body>
