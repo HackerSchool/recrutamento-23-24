@@ -1,0 +1,7 @@
+O projeto trata-se de um jogo simples para ser jogado por 2 jogadores.
+
+Quando os LED começarem a mudar de cor, o primeiro jogador a clicar no seu botão quando 2 ou mais luzes (de qualquer dos lados, podendo ser de lados opostos) acenderem da mesma cor ganha. 
+Se um jogador clicar antes disto acontecer, o outro jogador ganha automaticamente.
+Existe uma pausa de 5 segundos entre cada rodada, e a LED vermelha indica o jogador que ganhou a respectiva rodada durante esses 5 segundos.
+
+
