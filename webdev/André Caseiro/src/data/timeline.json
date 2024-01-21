@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "title": "MSc in Computer Science and Engineering",
+      "institution": "Instituto Superior Técnico",
+      "from": "2023",
+      "to": "[2025]",
+      "icon": "../../icons/ist.svg",
+      "link": "https://tecnico.ulisboa.pt/en/education/courses/masters-programmes/computer-science-and-engineering/"
+    },
+    {
+      "title": "Software Developer Intern",
+      "institution": "iCapital Portugal",
+      "from": "Jul 2023",
+      "to": "Aug 2023",
+      "description": "Full stack development using React and Ruby on Rails.",
+      "icon": "https://asset.brandfetch.io/idTh2BXqDU/idkLu1YsKq.svg",
+      "link": "https://icapital.com/about-us/"
+    },
+    {
+      "title": "BSc in Computer Science and Engineering",
+      "institution": "Instituto Superior Técnico",
+      "from": "2020",
+      "to": "2023",
+      "icon": "../../icons/ist.svg",
+      "link": "https://tecnico.ulisboa.pt/en/education/courses/undergraduate-programmes/computer-science-and-engineering"
+    }
+  ]
+}
