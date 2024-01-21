@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="icon" type="image/svg" href="imagens/favicons.jpg">
+    <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        
+        <ul>
+            <h1> Olá!</h1>
+        
+            <li><a href="index.html">Home</a></li>
+            
+            <div class = "dropdown1">
+                <li><a href="">Sobre mim</a></li>
+                <div class = "content1">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="animais.html"> Animais</a>
+                    <a href="livros.html"> Livros</a>
+                </div>
+            </div>
+
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ';">Don't click me!</a></li>
+        </ul>
+
+        <col class = column>
+    
+    </col>
+    </nav>
+    
+
+
+    <main>
+       
+        <header>
+            <h1>
+
+                Projetos
+            </h1>
+        </header>
+
+        <img src="imagens/projeto.png"  alt="fundo" class ="img">
+
+        <div class="row">
+            <div class="column side" ></div>
+            <div class="column middle" >
+                <p>
+
+                <p >
+                Nesta secção gostaria de expor alguns projetos que já fiz:
+                um deles é este a cima.
+                <br>
+                </p>
+                <br>
+                <p>
+                De forma resumida, o projeto consistia em criar uma simulação estocástica em python por meio de conseitos da programação evolutiva para encontrarmos o número cromático de um grafo.
+                Em outras palavras a ideia era simularmos a evolução de uma população de seres vivos de modo a se adaptarem ao meio envolvente que nós criamos.
+                Ora, claro que temos de simular a passagem do tempo e tudo o que ela acarreta (morte dos indívuos mais velhos), então criamos tarefas que funcionam como organizadores temporais.
+                As tarefas (evolulção, reprudução e análise do tamanho da população) são marcadas para um certo instante fictício de tal modo que milhões de anos de evolução possam ser simulados em 
+                alguns segundos (claro que de forma reduzida e focada no nosso problema).
+                </p>
+                <br>
+                <p>
+                 nosso caso, queríamos que essa população estivesse adaptada a colorir um grafo com o menor número de cores possível.
+                </p>
+
+                <br>
+                <p>
+                Cada indivíduo nasce com uma coloração e a sua data de nascimento (para podermos calcular a idade), e criamos inicialmente um número k de indivíduos aleatórios.
+                Agora temos de avaliar se esses indivíduos conseguem colorir o grafo que fornescemos. Uma coloração é simplesmente uma forma de colorir o grafo, ou seja, uma forma de represetar relações entre cores e vértices.
+                
+            </p>
+            <br>
+                <p>
+                Se a coloração de um certo indivíduo for válida, ele possui mais chances de ter filhos (uma forma de melhorar a coloração da população), mas a simulção utiliza outros parâmetros mais complexos.
+                </p>
+                
+                
+                <p>Se for inválida, o indivíduo possui mais chances de morrer.</p>
+                <br>
+                <p>
+                Claro que o processo de reprodução cria o problema do controle populacional. O computador tem memória limitada, então não podemos simplesmente deixar todos os indivíduos vivos.
+                Temos de fazer uma análise do tamanho da população e se ela for demasiadamente grande (de acordo com parâmetros definidos a priori) o nosso programa vai eliminar (matar mesmo) todos os indivíduos de coloração inválida.
+                Se por acaso ainda houver muitos indivíduos, matamos os mais velhos de acordo com outra fórmula de probabilidade (já devemos ter usado 3 ou 4).
+                </p>
+                <br>
+                <p>
+                Enfim, após muito tempo de simulação (de segundos a dias, dependendo de por quanto tempo  queres simular) buscamos da lista de indivíduos, a coloração do que tem melhor coeficiente de coloração (dada por outra fórmula).
+                </p>
+                <br>
+                <p>Tentei resumir o programa o máximo possível, mas é um assunto complexo e longo.</p>
+
+                <p>Este programa foi feito em grupos de 4 pessoas e tivemos 3 semanas para entregar. No entando, na prática foi feito por 2 pessoas (eu e um amigo) e em 2 semanas.
+                </p>
+                <br>
+                <p> O programa funciona corretamente, para que fique claro.</p>
+ 
+                  </p>
+            </div>
+            <div class="column side" ></div>
+          </div>
+          
+
+
+
+
+
+
+
+
+    </main>
+   
+    <footer>
+    
+        <h5 id = p2>
+            2024
+        </h5>
+        <h4>
+            joao.goncalves.cruz@tecnico.ulisboa.pt
+        </h4>
+    
+    </footer>
+</body>
+</html>
