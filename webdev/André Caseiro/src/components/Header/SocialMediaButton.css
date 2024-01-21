@@ -1,0 +1,24 @@
+.social-media-button {
+  display: inline-block;
+}
+
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media-button:hover .social-media-icon {
+  transform: scale(1.1);
+}
+
+.social-media-icon img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,60 @@
+.timelineTitle {
+  text-align: center;
+  text-decoration: underline;
+  color: #004;
+}
+
+.timeline {
+  padding: 20px 0;
+}
+
+.timelineItem {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.timelineItem * {
+  margin: 0;
+}
+
+.timelineItem .dates {
+  width: 33%;
+  border-right: 2px solid #004;
+  text-align: right;
+  padding: 10px 10px 10px 0;
+  overflow: auto;
+}
+
+.timelineItem .duration {
+  margin: 0.5em 0;
+}
+
+.timelineItem .image {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineItem .info {
+  width: 66%;
+  padding: 10px 0 10px 10px;
+}
+
+.timelineItem .info h3 {
+  margin: 0.5em 0 -0.4em 0;
+}
+
+.timelineItem .info p {
+  margin: 0.2em 0;
+}
+
+.timelineItem img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: auto;
+  vertical-align: middle;
+}

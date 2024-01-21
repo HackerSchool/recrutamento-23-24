@@ -1,0 +1,56 @@
+.mainHeader {
+  background: linear-gradient(to bottom, #004, #112);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mainHeader>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vmin;
+  gap: 2vmin;
+}
+
+.mainHeader .info p {
+  color: #ccc;
+}
+
+.mainHeader .info h1 {
+  color: #87CEEB;
+}
+
+.mainHeader .socialMedia {
+  text-align: right;
+}
+
+.mainHeader .picture {
+  border-radius: 50% 5% 5% 50%;
+  width: 30vmin;
+  height: 30vmin;
+  overflow: hidden;
+}
+
+.mainHeader .picture img {
+  width: 100%;
+  height: auto;
+}
+
+.mainHeader .scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 70vmin;
+  height: 5vmin;
+}
+
+.mainHeader .scroll-indicator:hover {
+  background-color: #cccccc33;
+  transition: background-color 0.3s ease-in-out;
+}
