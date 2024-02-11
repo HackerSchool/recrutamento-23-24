@@ -1,0 +1,7 @@
+Neste programa que é um task manager há a seguinte lista de funcionalidades:
+
+-é possível colocar e retirar tarefas e datas
+
+-é possível gravar tudo o que planeou num ficheiro .txt
+
+Sendo estas duas as funções principais da app
