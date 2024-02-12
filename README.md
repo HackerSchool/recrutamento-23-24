@@ -1,5 +1,8 @@
 # Submissões dos projetos de recrutamento - 1º Semestre 2024
 
+> [!IMPORTANT]
+> A submissão de projetos terminou no dia 11/2
+
 ## Como submeter
 
 1. Dar fork a este repositório
